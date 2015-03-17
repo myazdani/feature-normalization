@@ -6,7 +6,7 @@ if len(sys.argv) < 2:
     in_file = '../../data/sample.csv'
 else:
     in_file = sys.argv[1]
-    out_file = "normalized" + in_file.split("/")[-1]
+    out_file = sys.argv[2]
 
 ## specify ID column:
 id_col = 0
@@ -30,7 +30,7 @@ csv_f = csv.reader(open(in_file))
 
 normalized_features = []
 for row in csv_f:
-  normalized_features.append(max_normalize(row))
+  normalized_features.append(probability_normalize(row))
 
 f = open(out_file, 'wt')
 
