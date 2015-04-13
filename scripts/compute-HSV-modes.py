@@ -5,11 +5,10 @@ import numpy
 import pandas
 
 if len(sys.argv) < 2:
-    in_file = "/Users/myazdaniUCSD/Dropbox/CALIT2DATA/Benchmark/data/sample30K.csv"
-	out_file = "/Users/myazdaniUCSD/Desktop/samle_modes.csv"
+	print "please provide infile and outfile !"
 else:
-    in_file = sys.argv[1]
-    out_file = sys.argv[2]
+	in_file = sys.argv[1]
+	out_file = sys.argv[2]
 
 
 ## specify ID column:

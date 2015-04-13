@@ -8,8 +8,8 @@ from sklearn.preprocessing import normalize
 if len(sys.argv) < 2:
     in_file = '../../data/sample.csv'
 else:
-    in_file = sys.argv[1]
-    out_file = "normalized" + in_file.split("/")[-1]
+	in_file = sys.argv[1]
+	out_file = "normalized" + in_file.split("/")[-1]
 
 ## specify ID column:
 id_col = 0
