@@ -22,11 +22,14 @@ val_cols = range(181+256, 181 + 2*256)
 
 data = pandas.read_csv(in_file, sep = ",", header = None)
 
+print "read data success"
 
 hue_mode = numpy.argmax(numpy.array(data.ix[1:,hue_cols], dtype = float), axis = 1)
+print "hue mode success"
 sat_mode = numpy.argmax(numpy.array(data.ix[1:,sat_cols], dtype = float), axis = 1)
+print "sat mode success"
 val_mode = numpy.argmax(numpy.array(data.ix[1:,val_cols], dtype = float), axis = 1)
-
+print "val mode success"
 
 filenames = data.ix[1:,0]
 
